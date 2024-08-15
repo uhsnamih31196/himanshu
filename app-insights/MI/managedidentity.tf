@@ -1,5 +1,5 @@
 data "azurerm_resource_group" "rg"{
-     for_each = var.userAssignedIdentityProvision
+     for_each = var.managed_identities
      name = each.value["rg_name"]
 
 }
